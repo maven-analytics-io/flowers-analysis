@@ -1,0 +1,1523 @@
+<div class="modal_window-content modal_window-content--narrow_width modal_window-content--white_background" ng-class="{
+      'modal_window-content--full_height': variants.full_height || !!media,
+      'modal_window-content--narrow_width': variants.narrow_width,
+      'modal_window-content--window_width': variants.window_width,
+      'modal_window-content--no_max_width': variants.no_max_width,
+      'modal_window-content--no_background': variants.no_background,
+      'modal_window-content--white_background': variants.white_background,
+      'modal_window-content--dark_background': variants.dark_background,
+      'modal_window-content--vertically_center_contents': variants.vertically_center_contents,
+      'modal_window-content--vertically_center_self': variants.vertically_center_self,
+      'modal_window-content--width_of_contents': variants.width_of_contents,
+      'modal_window-content--with_media': !!media,
+    }" stop-propagation="click" click-outside-target="" ng-style="{
+      top: content_dimensions.top + 'px',
+      height: content_dimensions.height + 'px',
+      width: content_dimensions.width + 'px',
+    }">
+    <ng-transclude ng-class="{
+        'u-width_100': variants.full_width_parent,
+        'modal_window-content-transclude': !!media
+      }">
+      <search-result-paginated-section section-type="lyric" search-text="flowers"><div class="text_label u-text_center u-large_vertical_margins">
+  All lyric results
+</div>
+
+<scrollable-data src="$ctrl.infinite_scroll_data" repeat-with="hit" scroll-mechanism="infinite_scroll" container-classes="" item-classes=""><!---->
+
+<!----><div ng-if="$scrollable_data_ctrl.models.length" class="">
+  <!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Rae-sremmurd-black-beatles-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Rae-sremmurd-black-beatles-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F826c88b81db764e60238c23b864e0f20.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Black Beatles</div>
+      <div class="mini_card-subtitle">
+        Rae Sremmurd<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">moneys
+(Ear Drummers)
+Rae Sremm, Guwop, Mike WiLL
+I sent <span>flowers</span>, but you said you didn't receive 'em
+But</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Big-sean-control-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Big-sean-control-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F3ba9ef891a07420122cc6a831a83d89c.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Control</div>
+      <div class="mini_card-subtitle">
+        Big Sean<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">verse, then reigned on the hook
+The legend of Dorothy <span>Flowers</span> proclaimed from the roof
+The tale of a magnificent</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/J-cole-power-trip-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/J-cole-power-trip-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.rapgenius.com%2F6bxjwbfqghm9jqrtqt3d5l94y.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Power Trip</div>
+      <div class="mini_card-subtitle">
+        J. Cole<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">for ya
+Childish shit, you know child and shit
+Anonymous <span>flowers</span> sent, you know coward shit
+Now a n signed</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Ed-sheeran-supermarket-flowers-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Ed-sheeran-supermarket-flowers-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F64e958eb3020c1db3c0199e75fd22a8e.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Supermarket Flowers</div>
+      <div class="mini_card-subtitle">
+        Ed Sheeran<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">I took the supermarket <span>flowers</span> from the windowsill
+I threw the day old tea from the cup
+Packed up the</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Genius-english-translations-bts-spring-day-english-translation-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Genius-english-translations-bts-spring-day-english-translation-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F4561dddd252b309a2cdfb94368d19a6e.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">BTS - 봄날 (Spring Day) (English Translation)</div>
+      <div class="mini_card-subtitle">
+        Genius English Translations<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">s cold
+Until the spring day comes again
+Until the <span>flowers</span> bloom again
+Please stay, please stay there a little</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Drake-tuscan-leather-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Drake-tuscan-leather-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F6d70f1e6d38e9af4ddb7b3582a40dab8.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Tuscan Leather</div>
+      <div class="mini_card-subtitle">
+        Drake<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Dwight Howard couldn't reach, n
+Prince Akeem, they throw <span>flowers</span> at my feet, n
+I could go a hour</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Dj-khaled-im-on-one-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Dj-khaled-im-on-one-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F9b9f763b47b15d028264da945f390ae8.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">I’m On One</div>
+      <div class="mini_card-subtitle">
+        DJ Khaled<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">it, I'm on one"
+Huh! I'm burning purple <span>flowers</span>, it’s burning my chest (Huh)
+I bury the</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Miley-cyrus-flowers-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Miley-cyrus-flowers-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fae53e01e34645923dae2e3bb87aadd48.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Flowers</div>
+      <div class="mini_card-subtitle">
+        Miley Cyrus<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">to cry, but then remembered I
+I can buy myself <span>flowers</span>
+Write my name in the sand
+Talk to myself</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lil-wayne-a-milli-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lil-wayne-a-milli-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F168264d2832e062ddcf1401c71961c76.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">A Milli</div>
+      <div class="mini_card-subtitle">
+        Lil Wayne<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">me by the hour
+And I'd rather be pushin' <span>flowers</span>
+Than to be in the pen sharin' showers
+Tony</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Bruno-mars-when-i-was-your-man-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Bruno-mars-when-i-was-your-man-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F2e1e1ea46235d86a0ba541a1c30b3397.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">When I Was Your Man</div>
+      <div class="mini_card-subtitle">
+        Bruno Mars<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">too dumb to realize
+That I should've bought you <span>flowers</span>
+And held your hand
+Shoulda gave you all my</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Taylor-swift-call-it-what-you-want-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Taylor-swift-call-it-what-you-want-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F75f158769570b17de3f0bba057a6fbcb.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Call It What You Want</div>
+      <div class="mini_card-subtitle">
+        Taylor Swift<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">want, yeah
+Call it what you want to
+All my <span>flowers</span> grew back as thorns
+Windows boarded up after the</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/One-direction-perfect-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/One-direction-perfect-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.rapgenius.com%2F1ac8819ceb00d0938b2455c159216ad0.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Perfect</div>
+      <div class="mini_card-subtitle">
+        One Direction<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">And I might never be the one who brings you <span>flowers</span>
+But I can be the one, be the one</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Rich-the-kid-new-freezer-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Rich-the-kid-new-freezer-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fd465c5ff63bb4605681f4c89838b7b8f.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">New Freezer</div>
+      <div class="mini_card-subtitle">
+        Rich The Kid<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">end, yeah, yeah
+Ball 'em in, fallin' in bundles of <span>flowers</span> like parliament
+Never know, big dawg like ours
+My</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Nicki-minaj-and-mike-will-made-it-black-barbies-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Nicki-minaj-and-mike-will-made-it-black-barbies-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F18e43f791424eec242bab6bf02377330.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Black Barbies</div>
+      <div class="mini_card-subtitle">
+        Nicki Minaj &amp; Mike WiLL Made-It<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">and pretty titties
+Get dummies for they money
+You sent <span>flowers</span> but I wish I didn't receive ’em
+All</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Khalid-talk-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Khalid-talk-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fb0926f0312a41dcdd05cd4205e718bd4.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Talk</div>
+      <div class="mini_card-subtitle">
+        Khalid<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">where we're goin'
+Oh, nah
+Penthouse view, left some <span>flowers</span> in the room
+I'll make sure I leave</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Earl-sweatshirt-sunday-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Earl-sweatshirt-sunday-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fc5a84e1fffc69e59a2cae6e1e07f2f13.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Sunday</div>
+      <div class="mini_card-subtitle">
+        Earl Sweatshirt<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">it snows, I see how it goes
+I put the <span>flowers</span> in bowls, I know they're coming in droves</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Emma-watson-belle-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Emma-watson-belle-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fcde3e20dd1e92f394b747745014cdae5.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Belle</div>
+      <div class="mini_card-subtitle">
+        Emma Watson<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Good day
+Mais oui!
+You call this bacon?
+What lovely <span>flowers</span>!
+Some cheese
+Ten yards!
+One pound
+Excuse me
+I</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lil-durk-my-beyonce-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lil-durk-my-beyonce-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fb08356c6e49287cd2c63608483a78c34.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">My Beyoncé</div>
+      <div class="mini_card-subtitle">
+        Lil Durk<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Durk and DeJ
+My Beyoncé
+You and I
+White dress, <span>flowers</span>, and a suit and tie
+Me and you like</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Ali-gatie-moonlight-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Ali-gatie-moonlight-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Ff41bbfaff24a0d90dbc47bbadd0bde25.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Moonlight</div>
+      <div class="mini_card-subtitle">
+        Ali Gatie<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">we would do
+Every Sunday morning I go watch the <span>flowers</span> bloom
+I do things we used to do, hoping</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/A-ap-mob-telephone-calls-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/A-ap-mob-telephone-calls-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Ff7073dcf314451cce312063fb0178308.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Telephone Calls</div>
+      <div class="mini_card-subtitle">
+        A$AP Mob<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">boy flier than a bag of bees
+I got my <span>flowers</span>, life's a jeweler
+Diamond, fingers size of a</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Cigarettes-after-sex-k-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Cigarettes-after-sex-k-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Ff5b1a03cd22ea1e90aec38076c4fa72b.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">K.</div>
+      <div class="mini_card-subtitle">
+        Cigarettes After Sex<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">me now
+And I'm taking pictures of you with <span>flowers</span> on the wall
+Think I like you best when</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/The-rolling-stones-paint-it-black-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/The-rolling-stones-paint-it-black-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F28d03f64b4595babf96a84bbefacb788.299x299x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Paint It, Black</div>
+      <div class="mini_card-subtitle">
+        The Rolling Stones<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">line of cars and they're all painted black
+With <span>flowers</span> and my love, both never to come back
+I</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Kanye-west-big-brother-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Kanye-west-big-brother-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fb9d6cf24ceb76fa5d8ebf02569e16e2f.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Big Brother</div>
+      <div class="mini_card-subtitle">
+        Kanye West<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">should go on 'head tell 'em
+People never get the <span>flowers</span> while they can still smell 'em
+A idol in</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Harry-styles-sunflower-vol-6-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Harry-styles-sunflower-vol-6-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F7dc4b02c61e7d90da5ed3cbd0e3038e7.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Sunflower, Vol. 6</div>
+      <div class="mini_card-subtitle">
+        Harry Styles<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">in the gallery
+I love this shade, sunflower, sunflower
+Your <span>flowers</span> just died, plant new seeds in the melody
+Let</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Ariana-grande-the-way-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Ariana-grande-the-way-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.rapgenius.com%2F114c17a3576f17d3f6104cad21f43433.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">The Way</div>
+      <div class="mini_card-subtitle">
+        Ariana Grande<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Do my singin' in the shower, pickin' petals off of <span>flowers</span> like
+Do she love me, do she love me</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Kendrick-lamar-baby-keem-and-sam-dew-savior-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Kendrick-lamar-baby-keem-and-sam-dew-savior-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F2f8cae9b56ed9c643520ef2fd62cd378.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Savior</div>
+      <div class="mini_card-subtitle">
+        Kendrick Lamar, Baby Keem &amp; Sam Dew<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">he is not your savior
+'Bron made you give his <span>flowers</span>, but he is not your savior
+He is not</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Isaiah-rashad-wats-wrong-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Isaiah-rashad-wats-wrong-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F8138144db88b5df67dcaf1f79d19f5a1.220x220x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Wat’s Wrong</div>
+      <div class="mini_card-subtitle">
+        Isaiah Rashad<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">say
+Zay, say it ain't love cause you bought <span>flowers</span> yesterday
+Thoughts was always cheap, cheap, cheap
+But now</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Drake-sandras-rose-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Drake-sandras-rose-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F5c677b7bfc2f696abf2e2d928301bb44.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Sandra’s Rose</div>
+      <div class="mini_card-subtitle">
+        Drake<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">out of a living hell
+I'm the chosen one, <span>flowers</span> never pick themselves
+Yeah, no more, no more
+Baby</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Kendrick-lamar-worldwide-steppers-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Kendrick-lamar-worldwide-steppers-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F2f8cae9b56ed9c643520ef2fd62cd378.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Worldwide Steppers</div>
+      <div class="mini_card-subtitle">
+        Kendrick Lamar<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">this man compared to nobody
+Yesterday, I prayed to the <span>flowers</span> and trees
+Gratification to the powers that be
+Synchronization</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/J-cole-trouble-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/J-cole-trouble-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F89afbcd944c4799eb8844b5e95b3ee93.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Trouble</div>
+      <div class="mini_card-subtitle">
+        J. Cole<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Then it's calls cause the bird's obsessed
+Want <span>flowers</span>, cards, and the purses next
+Nah, bitch can't</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Spongebob-squarepants-fun-song-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Spongebob-squarepants-fun-song-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F034f5f6094b0eba31d4fee6c1dc8001e.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">F.U.N. Song</div>
+      <div class="mini_card-subtitle">
+        SpongeBob SquarePants<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">it again!
+Okay!
+F is for frolic through all the <span>flowers</span>
+U is for ukulele
+N is for nose picking</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Fugees-ready-or-not-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Fugees-ready-or-not-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F38b2ae8cc6cef7f121c1d9d96b308bd1.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Ready or Not</div>
+      <div class="mini_card-subtitle">
+        Fugees<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Crews run for cover, now they're under, pushing up <span>flowers</span>
+Superfly, true lies, do or die (He's super</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Eminem-drug-ballad-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Eminem-drug-ballad-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fdf8614bfbae237171a362b70f203303f.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Drug Ballad</div>
+      <div class="mini_card-subtitle">
+        Eminem<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">I'm going to a pretty place now where the <span>flowers</span> grow
+I'll be back in an hour or</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lorde-hard-feelings-loveless-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lorde-hard-feelings-loveless-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F135e9ae4d19e7816e0ffdd9a95922a0c.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Hard Feelings/Loveless</div>
+      <div class="mini_card-subtitle">
+        Lorde<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">my home, oh, oh
+I light all the candles
+Cut <span>flowers</span> for all my rooms
+I care for myself the</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Kali-uchis-after-the-storm-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Kali-uchis-after-the-storm-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fb6048d4492e60f2c8ecad648919b3c40.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">After the Storm</div>
+      <div class="mini_card-subtitle">
+        Kali Uchis<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">find the love
+'Cause after the storm's when the <span>flowers</span> bloom
+Kali, what you mean? I take it offensive</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Rick-ross-gold-roses-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Rick-ross-gold-roses-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F238ace232657985076b15e96643813d2.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Gold Roses</div>
+      <div class="mini_card-subtitle">
+        Rick Ross<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Before I'm gone outta this place, yeah
+Put some <span>flowers</span> in my vase, won't you?
+Let me know</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lany-good-guys-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lany-good-guys-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fe04a500bbbb0f78fe58aba565626e436.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">‎good guys</div>
+      <div class="mini_card-subtitle">
+        LANY<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">couple hours
+What I really wanna do is
+Bring you <span>flowers</span>
+I'm not gonna hold your hand
+Ask if</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Grover-washington-jr-just-the-two-of-us-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Grover-washington-jr-just-the-two-of-us-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fe39db0e36760188adb1f9d11e8325552.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Just the Two of Us</div>
+      <div class="mini_card-subtitle">
+        Grover Washington Jr.<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">s all that is
+And it don't make no <span>flowers</span> grow
+Good things might come to those who wait</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Taylor-swift-clean-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Taylor-swift-clean-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fda08ff60b6becc4fc1eaa3412338d18f.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Clean</div>
+      <div class="mini_card-subtitle">
+        Taylor Swift<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">The drought was the very worst (Oh-oh, oh-oh)
+When the <span>flowers</span> that we'd grown together died of</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/A-ap-mob-hella-hoes-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/A-ap-mob-hella-hoes-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fc552551b7639e2ed56ee2ecf5e568feb.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Hella Hoes</div>
+      <div class="mini_card-subtitle">
+        A$AP Mob<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">shoveled the snow, I done showered the state
+See them <span>flowers</span> gon' grow and the power gon' raise
+And we</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Anees-sun-and-moon-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Anees-sun-and-moon-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fd002309f9f25268ca2c8783f592fadca.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">​sun and moon</div>
+      <div class="mini_card-subtitle">
+        ​anees<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">my time
+But you're my dream girl
+You make <span>flowers</span> bloom (Girl, you make the <span>flowers</span> bloom)
+Girl, you</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/The-beatles-lucy-in-the-sky-with-diamonds-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/The-beatles-lucy-in-the-sky-with-diamonds-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F0123ecd81f4cd4d80c0143bba8b3da8e.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Lucy in the Sky with Diamonds</div>
+      <div class="mini_card-subtitle">
+        The Beatles<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">you answer quite slowly
+A girl with kaleidoscope eyes
+Cellophane <span>flowers</span> of yellow and green
+Towering over your head
+Look</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lil-wayne-god-bless-amerika-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lil-wayne-god-bless-amerika-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F1b99b69b978dc8af710fc38b538bc93c.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">God Bless Amerika</div>
+      <div class="mini_card-subtitle">
+        Lil Wayne<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">ain't promised today
+And I'm smoking on them <span>flowers</span>, catch the bouquet
+Here we live by the sword</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Tyler-the-creator-foreword-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Tyler-the-creator-foreword-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F7d663e082dec87ff1a6a096bb6e6ab65.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Foreword</div>
+      <div class="mini_card-subtitle">
+        Tyler, The Creator<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">all the sands
+See, I was in the woods with <span>flowers</span>, rainbows, and posies
+Fallin' outta my pocket, but y</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/F-scott-fitzgerald-the-great-gatsby-chapter-vi-annotated" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/F-scott-fitzgerald-the-great-gatsby-chapter-vi-annotated">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F0a131ed8e58da3310e81d3e11e4b16b8.300x452x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">The Great Gatsby (Chapter VI)</div>
+      <div class="mini_card-subtitle">
+        F. Scott Fitzgerald<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">desolate path of fruit rinds and discarded favors and crushed <span>flowers</span>.
+"I wouldn't ask too much of her," I</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Harry-styles-grapejuice-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Harry-styles-grapejuice-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fd98059a0f2afd10b04b912355c0e8ceb.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Grapejuice</div>
+      <div class="mini_card-subtitle">
+        Harry Styles<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">sunny afternoon
+I was on my way to buy some <span>flowers</span> for you
+Thought that we could hide away in</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Girl-in-red-i-wanna-be-your-girlfriend-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Girl-in-red-i-wanna-be-your-girlfriend-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F7af60a3ae3e39c6ba6de1d113f91e70d.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">​i wanna be your girlfriend</div>
+      <div class="mini_card-subtitle">
+        ​girl in red<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Hannah, oh Hannah
+Oh, Hannah, tell me something nice
+Like <span>flowers</span> and blue skies
+Oh, Hannah, I will follow you</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Shinsei-kamattechan-boku-no-sensou-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Shinsei-kamattechan-boku-no-sensou-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F29faa9313691fefa747daed3e60f7036.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">僕の戦争 (Boku no Sensou)</div>
+      <div class="mini_card-subtitle">
+        神聖かまってちゃん (Shinsei kamattechan)<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">words
+The evening train was shaking
+I purified the imperfect <span>flowers</span>
+The pain in my heart getting higher
+My comedy</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Kanye-west-roses-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Kanye-west-roses-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2F1114c010127bf9660a598f5e2dce983e.300x300x1.png&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Roses</div>
+      <div class="mini_card-subtitle">
+        Kanye West<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">I know it's past visiting hours
+But can I please give her these <span>flowers</span>?
+The doctor don't wanna</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!----><transclude-injecting-local-scope ng-repeat="scrollable_data_model in $scrollable_data_ctrl.models track by $id(scrollable_data_model)" copy-value-to-scope="{key: $scrollable_data_ctrl.repeat_with, value: scrollable_data_model}" class="u-display_block ">
+  <!---->
+
+  <!----><search-result-item ng-if="$ctrl.section_type !== 'album'" hit="hit"><div class="u-quarter_vertical_margins u-clickable" ng-switch="$ctrl.hit.type" tracking="click" tracking-event="Search Result Tap">
+  <!----><mini-song-card object="$ctrl.hit.result" ng-switch-when="song" search-highlights="$ctrl.hit.highlights"><a ng-href="https://genius.com/Lil-wayne-glory-lyrics" class="mini_card" ng-class="{'mini_card--small': $ctrl.variants.small}" href="https://genius.com/Lil-wayne-glory-lyrics">
+  <div class="mini_card-thumbnail clipped_background_image--background_fill clipped_background_image" clipped-background-image=":: $ctrl.song.song_art_image_thumbnail_url" style="background-image: url(&quot;https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.rapgenius.com%2Fe4cad6fd89a8bf683f612bc1ef21a38e.300x300x1.jpg&quot;);">
+    <!---->
+  </div>
+  <div class="mini_card-info">
+    <div class="mini_card-title_and_subtitle">
+      <div class="mini_card-title">Glory</div>
+      <div class="mini_card-subtitle">
+        Lil Wayne<!---->
+      </div>
+    </div>
+    <!----><div ng-if="$ctrl.excerpt_with_markup" class="mini_card-lyric_excerpt" ng-bind-html="$ctrl.excerpt_with_markup">Lucas, my driver's cruisin', my partner's ruthless
+My <span>flower's</span> rootless, my pocket's roofless, she poppin' roofies</div><!---->
+    <!---->
+  </div>
+</a>
+</mini-song-card><!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----></div>
+</search-result-item><!---->
+
+
+</transclude-injecting-local-scope><!---->
+</div><!---->
+
+<!----><div ng-if="$scrollable_data_ctrl.has_next()" ng-switch="$scrollable_data_ctrl.scroll_mechanism">
+  <!---->
+
+  <!----><div ng-switch-when="infinite_scroll">
+    <div infinite-scroll="$scrollable_data_ctrl.load_next()" infinite-scroll-disabled="!$scrollable_data_ctrl.has_next()" yields-on-load-more="$scrollable_data_ctrl.more_loaded_callback = callback"></div>
+  </div><!---->
+</div><!---->
+
+<!---->
+</scrollable-data>
+</search-result-paginated-section>
+    </ng-transclude>
+    <!---->
+
+    <!---->
+  </div>
